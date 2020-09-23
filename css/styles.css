@@ -1,32 +1,135 @@
+
+/* Dark Mode CSS */
+
 body {
-  color: #40514E;
-  font-family: 'Merriweather', serif;
-  margin: 0;
+  color: #f0f5f9;
   text-align: center;
+  background-color: #1e2022;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 div {
   padding: 20px;
 }
 
+header {
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+    color: #f0f5f9;
+}
 h1 {
-  color: #66BFBF;
-  font-family: 'Sacramento', cursive;
-  font-size: 5.625rem;
+  color: #c9d6df;
+  font-family: 'Zeyada', cursive;
+  font-size: 6.625rem;
   margin: 50px auto 0 auto;
 }
+
+.brand-logo {
+    max-width: 75px;
+    float: left;
+    padding: 14px 0;
+}
+.brand-logo img {
+    max-width: 50%;               /*   may need to adjust back to 100% when non */
+}
+.navigation {
+    margin: 0;
+    float: right;
+}
+.navigation li {
+    list-style: none;
+    float: left;
+}
+.navigation li a {
+    color: #f0f5f9;
+    padding: 28px 15px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin: 0;
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #fff;
+}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/*-- Responsive CSS --*/
+@media screen and (max-width:767px) {
+.show-menu-btn,
+.hide-menu-btn {
+    display: block;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #8d93ab;
+    top: -100%;
+    left: 0;
+    padding: 50px 0;
+    transition: 1s;
+}
+.navigation li {
+    width: 100%;
+}
+.navigation li a {
+    padding: 15px 15px;
+    text-align: left;
+}
+.navigation li a i {
+    width: auto;
+    font-size: 20px;
+}
+.hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+#toggle-btn:checked ~ nav .navigation {
+    top: 0;
+}
+
 
 h2 {
   color: #66BFBF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: normal;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 h3 {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
 }
 
 hr {
