@@ -6,9 +6,6 @@ $(function(){
   $("#nav-bar-button").click(openNav);
 });
 
-
-
-
 // Function to add random job title to header
 
 function insertHeaderJob() {
@@ -25,6 +22,8 @@ function insertHeaderJob() {
   }, 1000);                            // Delay 1 second
 }
 
+// Functions to open and close Nav sidebar
+
 function openNav() {
   $("#side-nav").addClass("navWidth");
   $("#main-nav").addClass("navMargin");
@@ -34,14 +33,3 @@ function closeNav() {
   $("#side-nav").removeClass("navWidth");
   $("#main-nav").removeClass("navMargin");
 }
-// /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "250px";
-//   document.getElementById("main").style.marginLeft = "250px";
-// }
-//
-// /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-//   document.getElementById("main").style.marginLeft = "0";
-// }

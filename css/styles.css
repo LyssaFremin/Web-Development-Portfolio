@@ -2,14 +2,13 @@
 body {
   color: #f0f5f9;
   text-align: center;
-  background-color: #1e2022;
+  background-color: #000;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
-div {
-  padding: 20px;
-}
 /* Navigation */
 
 .logo_nav_bar img {
@@ -17,6 +16,8 @@ div {
   max-height: 100px;
   float: left;
   padding: 14px 0;
+  transform: rotateZ(30deg);
+  margin-left: 15px;
 }
 
 .side_nav {
@@ -26,10 +27,10 @@ div {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #1e2022;
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding: 60px 0 0 0;
   text-align: right;
 }
 
@@ -43,7 +44,7 @@ div {
 }
 
 .side_nav a:hover {
-  color: #000;
+  color: #52616b;
 }
 
 .sidebar .close_btn {
@@ -52,6 +53,7 @@ div {
   right: 25px;
   font-size: 3.5rem;
   margin-right: 50px;
+  padding: 20px;
 }
 
 #main-nav {
@@ -76,12 +78,18 @@ div {
   .side_nav a {font-size: 18px;}
 }
 
+/* Name & Job Section */
+
+.top-container {
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
   color: #c9d6df;
   font-family: 'Zeyada', cursive;
-  font-size: 6.625rem;
-  margin: 50px auto 0 auto;
+  font-size: 7.5rem;
+  margin: 50px auto 10px auto;
 }
 
   h2 {
@@ -89,12 +97,13 @@ h1 {
     font-size: 3rem;
     font-weight: normal;
     padding-bottom: 10px;
-    margin: 0;
+    margin: 15px auto 0 auto;
   }
 
-  h3 {
+  .job {
     color: #f0f5f9;
-    font-size: 2.5rem;
+    font-size: 2.7rem
+    margin: 15px auto 0 auto;
   }
 
   hr {
@@ -103,3 +112,74 @@ h1 {
     margin: 100px auto;
     width: 7%;
   }
+
+  /* Footer */
+
+  .bottom-container {
+    margin: 50px 0 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box>* {
+    flex: 1 1 160px;
+  }
+  .bottom-container a{
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #c9d6df
+  }
+
+  .bottom-container a:hover {
+    color: #52616b;
+  }
+  }
+
+  /* Twinkling Stars */
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url("../images/stars.png") repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url("../images/twinkling.png") repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
