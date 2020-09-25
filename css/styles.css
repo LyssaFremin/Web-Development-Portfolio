@@ -36,7 +36,7 @@ body {
   text-align: right;
 }
 
-.side_nav a {
+.side_nav a, .side_nav span {
   padding:8px 8px 8px 32px;
   text-decoration: none;
   font-size: 3rem;
@@ -80,10 +80,10 @@ body {
   .side_nav a {font-size: 18px;}
 }
 
-/* Name & Job Section */
+/* Top Section */
 
 .top-container {
-  margin: 0;
+  margin-left: 50px;
   padding: 0;
 }
 
@@ -92,13 +92,6 @@ h1 {
   font-family: 'Zeyada', cursive;
   font-size: 7.5rem;
   margin: 50px auto 10px auto;
-}
-
-.about-photo {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto 0 auto;
-
 }
 
   h2 {
@@ -111,15 +104,25 @@ h1 {
 
   .job {
     color: #f0f5f9;
-    font-size: 2.7rem
+    font-size: 2.7rem;
     margin: 15px auto 0 auto;
   }
 
-  hr {
-    border: dotted #f0f5f9; .5rem;
+hr {
+    font-family: 'Montserrat', sans-serif;
+    border: dotted #f0f5f9 .5rem;
     border-bottom: none;
     margin: 100px auto;
     width: 7%;
+  }
+
+  .about .top-container {
+    margin-left: 90px;
+    padding: 0;
+  }
+
+  .about-photo {
+    float: right;
   }
   /* Middle container */
 
@@ -127,6 +130,10 @@ h1 {
     margin: 0 auto 0 auto;
     text-align: left;
     width: 50%;
+  }
+
+  .middle-container h2 {
+
   }
   /* Footer */
 
