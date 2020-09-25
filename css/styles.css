@@ -1,4 +1,4 @@
-/* Dark Mode CSS */
+
 /* Home */
 
 body {
@@ -13,6 +13,9 @@ body {
 
 /* Navigation */
 
+header {
+  margin: 15px 0  0 15px;
+}
 .logo_nav_bar img {
   max-width: 100px;
   max-height: 100px;
@@ -62,7 +65,7 @@ body {
   transition: margin-right .5s;
   padding: 16px;
   text-align: right;
-  margin-right: 50px;
+  margin-right: 15px;
 }
 
 /* Navigation JS classes */
@@ -80,32 +83,47 @@ body {
   .side_nav a {font-size: 18px;}
 }
 
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  margin: 75px 0 0 50px;
+}
+
 /* Top Section */
 
 .top-container {
-  margin-left: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
   padding: 0;
+}
+
+.top-container.about {
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 h1 {
   color: #c9d6df;
   font-family: 'Zeyada', cursive;
   font-size: 7.5rem;
-  margin: 50px auto 10px auto;
+  margin-bottom: 15px;
 }
 
   h2 {
     color: #f0f5f9;
     font-size: 3rem;
     font-weight: normal;
-    padding-bottom: 10px;
-    margin: 15px auto 0 auto;
+    padding-bottom: 15px;
+    margin: 0;
   }
 
   .job {
     color: #f0f5f9;
     font-size: 2.7rem;
-    margin: 15px auto 0 auto;
   }
 
 hr {
@@ -116,44 +134,24 @@ hr {
     width: 7%;
   }
 
-  .about .top-container {
-    margin-left: 90px;
-    padding: 0;
-  }
-
   .about-photo {
-    float: right;
   }
   /* Middle container */
 
-  .middle-container {
-    margin: 0 auto 0 auto;
-    text-align: left;
-    width: 50%;
-  }
 
-  .middle-container h2 {
-
-  }
   /* Footer */
 
   .bottom-container {
-    margin: 50px 0 0;
     text-align: center;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 100%;
+    margin-top: 50px;
   }
-  .break {
-  flex-basis: 100%;
-  height: 0;
-}
+
   .bottom-container a{
-    flex-grow: 1;
-    padding:8px 8px 8px 32px;
+    padding:16px;
     text-decoration: none;
     font-size: 1.5rem;
     color: #c9d6df
@@ -163,11 +161,15 @@ hr {
     color: #52616b;
   }
 
+  .flex-box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .copyright {
-    margin-top: 25px;
-    margin-left: 25px;
-    text-align: center;
-    flex-grow: 3;
+    margin-top: 5px;
   }
 
 
