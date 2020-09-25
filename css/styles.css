@@ -1,4 +1,6 @@
 /* Dark Mode CSS */
+/* Home */
+
 body {
   color: #f0f5f9;
   text-align: center;
@@ -8,13 +10,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.about {
-
-  text-align: left;
-
-}
-
 
 /* Navigation */
 
@@ -133,10 +128,6 @@ h1 {
     text-align: left;
     width: 50%;
   }
-  p {
-    font-size: 1.5rem;
-  }
-
   /* Footer */
 
   .bottom-container {
@@ -217,4 +208,30 @@ h1 {
   -o-animation:move-twink-back 200s linear infinite;
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
+}
+
+/* About */
+
+.about {
+  text-align: left;
+}
+
+.about .top-container, .middle-container {
+  margin-top: 70px;
+}
+
+.about ul {
+  list-style-type: none;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
