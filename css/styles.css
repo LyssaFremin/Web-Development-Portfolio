@@ -87,7 +87,7 @@ header {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  margin: 75px 0 0 50px;
+  margin: 75px 50px 0;
 }
 
 /* Top Section */
@@ -101,10 +101,7 @@ header {
   padding: 0;
 }
 
-.top-container.about {
-  flex-flow: row;
-  justify-content: space-between;
-}
+
 
 h1 {
   color: #c9d6df;
@@ -133,11 +130,6 @@ hr {
     margin: 100px auto;
     width: 7%;
   }
-
-  .about-photo {
-  }
-  /* Middle container */
-
 
   /* Footer */
 
@@ -220,27 +212,52 @@ hr {
 }
 
 /* About */
-
-.about {
+.top-container.about {
+  flex-flow: row;
+  justify-content: space-between;
   text-align: left;
 }
 
-.about .top-container, .middle-container {
-  margin-top: 70px;
-}
-
-.about ul {
-  list-style-type: none;
-}
+/* Middle Container */
 
 .skills-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 1vw;
+  grid-template-areas:
+    "languages frameworks tools"
+    "languages_list frameworks_list tools_list";
+    margin:0;
+    text-align: left;
 }
 
-.skills{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+#skills_languages {
+  grid-area: languages;
+}
+#skills_frameworks {
+  grid-area: frameworks;
+}
+#skills_tools {
+  grid-area: tools;
+}
+#skills_languages_list {
+  grid-area: languages_list;
+}
+#skills_frameworks_list {
+  grid-area: frameworks_list;
+}
+#skills_tools_list {
+  grid-area: tools_list;
+}
+
+.skills-container h3 {
+  padding: 8px;
+  margin: 0;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
 }
