@@ -16,6 +16,10 @@ body {
 header {
   margin: 15px 0  0 15px;
 }
+
+.accent {
+  color: #52616b;
+}
 .logo_nav_bar img {
   max-width: 100px;
   max-height: 100px;
@@ -86,8 +90,9 @@ header {
 .content {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
-  margin: 75px 50px 0;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* Top Section */
@@ -100,8 +105,6 @@ header {
   margin-left: 0;
   padding: 0;
 }
-
-
 
 h1 {
   color: #c9d6df;
@@ -119,15 +122,15 @@ h1 {
   }
 
   .job {
-    color: #f0f5f9;
+
     font-size: 2.7rem;
   }
 
 hr {
     font-family: 'Montserrat', sans-serif;
-    border: dotted #f0f5f9 .5rem;
+    border: dotted #52616b .5rem;
     border-bottom: none;
-    margin: 100px auto;
+    margin: 50px auto;
     width: 7%;
   }
 
@@ -139,7 +142,7 @@ hr {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .bottom-container a{
@@ -153,15 +156,9 @@ hr {
     color: #52616b;
   }
 
-  .flex-box {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-  }
 
   .copyright {
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
 
@@ -212,24 +209,55 @@ hr {
 }
 
 /* About */
-.top-container.about {
-  flex-flow: row;
-  justify-content: space-between;
-  text-align: left;
+
+
+
+.top-container img {
+  margin: 15px 0;
+  width: 250px;
+  height: 250px;
+}
+
+.bio {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 50px 0;
+}
+
+.bio div {
+  width: 50%;
+  margin: 0 auto;
+}
+.bio h2 {
+  font-size: 3rem;
+}
+.bio h3 {
+  color: #c9d6df;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.bio p {
+  font-size: 1.25rem;
 }
 
 /* Middle Container */
 
+
 .skills-container {
   display: grid;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-columns:1fr 1fr;
-  grid-gap: 1vw;
+  grid-template-columns:[languages-col] 1fr [frameworks-col] 1fr[tools-col] 1fr;
+  grid-template-rows: [header-start] 10vh [list-start] 1fr;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 5rem;
   grid-template-areas:
     "languages frameworks tools"
     "languages_list frameworks_list tools_list";
-    margin:0;
-    text-align: left;
+  text-align: left;
+
 }
 
 #skills_languages {
@@ -251,13 +279,116 @@ hr {
   grid-area: tools_list;
 }
 
-.skills-container h3 {
-  padding: 8px;
+.middle-container h3 {
+  padding: 8px 8px 0;
   margin: 0;
+  text-align: left;
+  font-size: 2rem;
+  color: #c9d6df;
+  font-weight: 300;
 }
 
-.skills-container ul {
+.middle-container ul {
   list-style-type: none;
-  padding: 8px;
+  padding: 8px 8px 0;
   margin: 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+
+/* .random-facts-container {
+  display: grid;
+  grid-template-columns: [img] 66vw [facts] 33vw;
+  grid-template-rows: [img] 5vh[fact-list] 15vh;
+
+  grid-gap: 1vw;
+  grid-template-areas:
+    "facts_img facts"
+    "facts_img facts_list";
+}
+#facts_img {
+  grid-area: facts_img;
+}
+#facts {
+  grid-area: facts;
+}
+#facts_list {
+  grid-area: facts_list;
+}
+
+
+.random-facts-container h3 {
+  margin:0;
+} */
+
+/* Projects */
+
+.project-page {
+  margin: 50px 0;
+}
+.project-page #mello img {
+  width: 600px;
+  height: 480px;
+}
+.project-page #hogwarts img {
+  width: 198px;
+  height: 423px;
+  padding: 0 25px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: [images] 1fr [headline] 1fr;
+  grid-template-rows: [images] 10vh [desc] 1fr;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 2.5rem;
+  text-align: left;
+}
+
+.project-container#mello {
+  grid-template-areas:
+    "mello_img mello_header"
+    "mello_img mello_desc";
+}
+
+#mello_img{
+  grid-area: mello_img;
+}
+#mello_header {
+  grid-area: mello_header;
+}
+#mello_desc {
+  grid-area: mello_desc;
+}
+
+.project-container#hogwarts {
+  grid-template-areas:
+    "hogwarts_img hogwarts_header"
+    "hogwarts_img hogwarts_desc";
+    margin: 0 15px 0 45px;
+}
+#hogwarts_img {
+  grid-area: hogwarts_img;
+}
+#hogwarts_header {
+  grid-area: hogwarts_header;
+}
+#hogwarts_desc {
+  grid-area: hogwarts_desc;
+}
+
+.project-container h3 {
+  margin-top: 45px;
+  font-size: 2rem;
+}
+
+.project-container p {
+  font-size: 1.25rem;
+}
+
+/* Contact */
+
+.contact {
+  margin: 50px 0;
 }
