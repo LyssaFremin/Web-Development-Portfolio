@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lyssa Fremin- about</title>
+  <title>Lyssa Fremin- contact</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="../images/favicon.ico">
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Zeyada&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <script src="../scripts/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
   <script src="../scripts/myscripts.js"></script>
 
   <!-- Font Awesome -->
@@ -35,22 +37,44 @@
         </div>
       </header>
       <div class="content">
-      <div class="top-container contact">
-        <h2>let's get in <span style="color: #52616b">touch</span></h2>
-      </div>
-      <div class="middle-container ">
+        <div class="top-container contact">
+          <h2>let's get in <span style="color: #52616b">touch</span></h2>
+        </div>
+        <div class="middle-container ">
+          <div class="contact-form">
+            <form id="ajax-contact" method="post" action="mailer.php">
+              <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
 
-      <div class="bottom-container">
-        <div class="flex-box">
-          <a href="https://www.linkedin.com/in/alyssa-fremin-710819143/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/Lyssa74228513"><i class="fab fa-twitter"></i></a>
-          <a href="https://github.com/LyssaFremin"><i class="fab fa-github"></i></a>
-          <a href="mailto: lyssa.fremin@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-        <div class="flex-box">
-          <p class="copyright">© 2020 Alyssa Fremin.</p>
+              <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="field">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="bottom-container">
+            <div class="flex-box">
+              <a href="https://www.linkedin.com/in/alyssa-fremin-710819143/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/Lyssa74228513"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/LyssaFremin"><i class="fab fa-github"></i></a>
+              <a href="mailto: lyssa.fremin@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="flex-box">
+              <p class="copyright">© 2020 Alyssa Fremin.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
     </div>
