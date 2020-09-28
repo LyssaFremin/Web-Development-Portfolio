@@ -1,4 +1,7 @@
 
+* {
+  box-sizing: border-box;
+}
 /* Home */
 
 body {
@@ -82,7 +85,7 @@ header {
 }
 /* Responsive Navigation */
 
-@media scren and (max-height: 450px){
+@media screen and (max-height: 450px){
   .side_nav {padding-top: 15px; }
   .side_nav a {font-size: 18px;}
 }
