@@ -1,24 +1,4 @@
 
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...} */
-
-
-
-* {
-  box-sizing: border-box;
-}
 /* Home */
 
 body {
@@ -35,16 +15,14 @@ body {
 
 header {
   margin: 15px 0  0 15px;
-
 }
 
 .accent {
   color: #52616b;
 }
-
 .logo_nav_bar img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
   float: left;
   padding: 14px 0;
   transform: rotateZ(30deg);
@@ -92,8 +70,6 @@ header {
   padding: 16px;
   text-align: right;
   margin-right: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 /* Navigation JS classes */
@@ -106,7 +82,7 @@ header {
 }
 /* Responsive Navigation */
 
-@media screen and (max-height: 450px){
+@media scren and (max-height: 450px){
   .side_nav {padding-top: 15px; }
   .side_nav a {font-size: 18px;}
 }
@@ -235,17 +211,11 @@ hr {
 /* About */
 
 
-.content {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .top-container img {
   margin: 15px 0;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
 }
 
 .bio {
@@ -281,14 +251,12 @@ hr {
   display: grid;
   grid-template-columns:[languages-col] 1fr [frameworks-col] 1fr[tools-col] 1fr;
   grid-template-rows: [header-start] 10vh [list-start] 1fr;
-  grid-row-gap: 2.5rem;
-  grid-column-gap: .5rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 5rem;
   grid-template-areas:
     "languages frameworks tools"
     "languages_list frameworks_list tools_list";
   text-align: left;
-  margin-left: 12%;
-
 
 }
 
@@ -311,19 +279,21 @@ hr {
   grid-area: tools_list;
 }
 
-.skills-container h3 {
+.middle-container h3 {
+  padding: 8px 8px 0;
+  margin: 0;
   text-align: left;
   font-size: 2rem;
   color: #c9d6df;
   font-weight: 300;
 }
 
-.skill-list {
+.middle-container ul {
   list-style-type: none;
   padding: 8px 8px 0;
   margin: 0;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 
@@ -479,67 +449,4 @@ hr {
 
 .contact-form button:hover {
   color: #c9d6df;
-}
-
-
-/*
-Reponsive CSS */
-
-
-/* .col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
 }
