@@ -242,19 +242,13 @@ hr {
   align-items: center;
 }
 
-.top-container img {
-  margin: 15px 0;
-  width: 400px;
-  height: 400px;
-}
-
 .bio {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  margin: 50px 0;
+  padding: 0.9rem;
+  margin: 3.1rem 0;
 }
 
 .bio div {
@@ -279,9 +273,9 @@ hr {
 
 .skills-container {
   display: grid;
-  grid-template-columns:[languages-col] 1fr [frameworks-col] 1fr[tools-col] 1fr;
-  grid-template-rows: [header-start] 10vh [list-start] 1fr;
-  grid-row-gap: 2.5rem;
+  grid-template-columns:[languages-col] 33% [frameworks-col] 34%[tools-col] 33%;
+  grid-template-rows: [header-start] 40% [list-start] 60%;
+  grid-row-gap: 1.5rem;
   grid-column-gap: .5rem;
   grid-template-areas:
     "languages frameworks tools"
@@ -320,7 +314,7 @@ hr {
 
 .skill-list {
   list-style-type: none;
-  padding: 8px 8px 0;
+  padding: 0.5rem 0.5rem 0;
   margin: 0;
   text-align: left;
   font-size: 1.25rem;
@@ -355,25 +349,22 @@ hr {
 /* Projects */
 
 .project-page {
-  margin: 50px 0;
+  margin: 2% 0;
 }
-.project-page #mello img {
-  width: 600px;
-  height: 480px;
+.project-page img {
+  max-width: 600px;
+  max-height: 480px;
 }
-.project-page #hogwarts img {
-  width: 198px;
-  height: 423px;
-  padding: 0 25px;
-}
+
 
 .project-container {
   display: grid;
-  grid-template-columns: [images] 1fr [headline] 1fr;
-  grid-template-rows: [images] 10vh [desc] 1fr;
+  grid-template-columns: [images] 50% [headline] 50%;
+  grid-template-rows: [images] 100%[desc] 50%;
   grid-row-gap: 0.5rem;
   grid-column-gap: 2.5rem;
   text-align: left;
+  margin-left: 15%;
 }
 
 .project-container#mello {
@@ -396,7 +387,7 @@ hr {
   grid-template-areas:
     "hogwarts_img hogwarts_header"
     "hogwarts_img hogwarts_desc";
-    margin: 0 15px 0 45px;
+
 }
 #hogwarts_img {
   grid-area: hogwarts_img;
@@ -447,8 +438,8 @@ hr {
 .contact-form input {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  height: 25px;
-  line-height: 25px;
+  height: 2rem;
+  line-height: 2rem;
   background: #fff;
   color: #000;
   padding: 0 6px;
@@ -465,16 +456,16 @@ hr {
   justify-content: center;
 }
 .contact-form button {
-  height: 45px;
-  line-height: 30px;
+  height: 20%;
+  line-height: 2rem;;
   background: #52616b;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 2%;
   cursor: pointer;
   width: 25%;
   text-align: center;
   font-size: 1.5rem;
-  border-radius: 5px;;
+  border-radius: 5px;
 }
 
 .contact-form button:hover {
