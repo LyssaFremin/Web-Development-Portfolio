@@ -80,7 +80,7 @@ header {
 
 .sidebar .close_btn {
   position: absolute;
-  top 0;
+  top: 0;
   right: 25px;
   font-size: 3.5rem;
   margin-right: 50px;
@@ -510,6 +510,10 @@ Reponsive CSS */
   [class*="col-"] {
     width: 100%;
   }
+  .side_nav {padding-top: 15px; }
+  .side_nav a {font-size: 18px;}
+
+
 }
 
 @media only screen and (min-width: 600px) {
