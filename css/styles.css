@@ -27,7 +27,7 @@ body {
   background-color: #000;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  margin: 1%;
+  margin: 5%;
   padding: 0;
 }
 
@@ -98,18 +98,14 @@ header {
 
 /* Navigation JS classes */
 .navWidth {
-  width: 400px;
+  width: 250px;
 }
 
 .navMargin {
-  margin-right: 400px;
+  margin-right: 250px;
 }
 /* Responsive Navigation */
 
-@media screen and (max-height: 450px){
-  .side_nav {padding-top: 15px; }
-  .side_nav a {font-size: 18px;}
-}
 
 .content {
   display: flex;
@@ -504,8 +500,7 @@ Reponsive CSS */
     width: 100%;
   }
   .side_nav {padding-top: 15px; }
-  .side_nav a {font-size: 18px;}
-
+  .side_nav a {font-size: 3rem;}
 
 }
 
