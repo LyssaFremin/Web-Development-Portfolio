@@ -92,6 +92,8 @@ header {
   padding: 16px;
   text-align: right;
   margin-right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* Navigation JS classes */
@@ -273,12 +275,14 @@ hr {
   display: grid;
   grid-template-columns:[languages-col] 1fr [frameworks-col] 1fr[tools-col] 1fr;
   grid-template-rows: [header-start] 10vh [list-start] 1fr;
-  grid-row-gap: 0.5rem;
-  grid-column-gap: 5rem;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: .5rem;
   grid-template-areas:
     "languages frameworks tools"
     "languages_list frameworks_list tools_list";
   text-align: left;
+  margin: 0 15px 0;
+
 
 }
 
@@ -310,12 +314,12 @@ hr {
   font-weight: 300;
 }
 
-.middle-container ul {
+.skill-list {
   list-style-type: none;
   padding: 8px 8px 0;
   margin: 0;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 
@@ -476,6 +480,7 @@ hr {
 
 /*
 Reponsive CSS */
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
