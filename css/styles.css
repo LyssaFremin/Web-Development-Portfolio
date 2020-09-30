@@ -345,7 +345,12 @@ hr {
 /* Projects */
 
 .project-page {
-  margin: 2% 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem;
+    margin: 3.1rem 0;
 }
 .project-page img {
   max-width: 600px;
@@ -356,11 +361,10 @@ hr {
 .project-container {
   display: grid;
   grid-template-columns: [images] 50% [headline] 50%;
-  grid-template-rows: [images] 100%[desc] 50%;
+  grid-template-rows: [images] 100% [desc] 45%;
   grid-row-gap: 0.5rem;
-  grid-column-gap: 2.5rem;
+  grid-column-gap: 10rem;
   text-align: left;
-  margin-left: 15%;
 }
 
 .project-container#mello {
@@ -396,8 +400,9 @@ hr {
 }
 
 .project-container h3 {
-  margin-top: 45px;
   font-size: 2rem;
+  font-weight: 400;
+  padding-top: 6%;
 }
 
 .project-container p {
