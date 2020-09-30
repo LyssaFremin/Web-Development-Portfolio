@@ -383,6 +383,21 @@ hr {
   grid-area: mello_desc;
 }
 
+.project-container#maldives {
+  grid-template-areas:
+    "maldives_img maldives_header"
+    "maldives_img maldives_desc";
+
+}
+#hogwarts_img {
+  grid-area: maldives_img;
+}
+#hogwarts_header {
+  grid-area: maldives_header;
+}
+#hogwarts_desc {
+  grid-area: maldives_desc;
+}
 .project-container#hogwarts {
   grid-template-areas:
     "hogwarts_img hogwarts_header"
