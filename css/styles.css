@@ -31,6 +31,8 @@ body {
   padding: 0;
 }
 
+
+
 /* Navigation */
 
 header {
@@ -113,6 +115,10 @@ header {
   justify-content: center;
   align-items: center;
 
+}
+
+.belowNav {
+  overflow-x: hidden;
 }
 
 /* Top Section */
@@ -267,7 +273,7 @@ hr {
 /* Middle Container */
 
 
-.skills-container {
+/* .skills-container {
   display: grid;
   grid-template-columns:[languages-col] 33% [frameworks-col] 34%[tools-col] 33%;
   grid-template-rows: [header-start] 40% [list-start] 60%;
@@ -299,7 +305,7 @@ hr {
 }
 #skills_tools_list {
   grid-area: tools_list;
-}
+} */
 
 .skills-container h3 {
   text-align: left;
@@ -310,8 +316,8 @@ hr {
 
 .skill-list {
   list-style-type: none;
-  padding: 0.5rem 0.5rem 0;
-  margin: 0;
+  padding: 0.5rem;
+  margin-botton: 5px;
   text-align: left;
   font-size: 1.25rem;
 }
@@ -491,8 +497,8 @@ hr {
 }
 
 
-/*
-Reponsive CSS */
+
+/* Reponsive CSS  */
 
 
 /* .col-1 {width: 8.33%;}
@@ -506,7 +512,7 @@ Reponsive CSS */
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
+.col-12 {width: 100%;}
 
 .row::after {
   content: "";
@@ -515,7 +521,7 @@ Reponsive CSS */
 }
 
 @media only screen and (max-width: 800px) {
-  /* For mobile phones: */
+  For mobile phones:
   [class*="col-"] {
     width: 100%;
   }
@@ -524,8 +530,8 @@ Reponsive CSS */
 
 }
 
-/* @media only screen and (min-width: 600px) {
-  /* For tablets: */
+@media only screen and (min-width: 600px) {
+  For tablets:
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -538,10 +544,10 @@ Reponsive CSS */
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-} */
+}
 
 @media only screen and (min-width: 800px) {
-  /* For desktop: */
+  For desktop:
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
